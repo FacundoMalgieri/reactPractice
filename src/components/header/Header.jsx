@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from '../../q.png';
 import {Link} from "react-router-dom";
 import './Header.css'
-import {MenuItem, Nav, Navbar, NavItem} from "react-bootstrap";
+import {Nav, Navbar, NavItem} from "react-bootstrap";
 
 class Header extends Component {
 	render() {
@@ -20,6 +20,9 @@ class Header extends Component {
 							<Link to="home" className="header-link">Home</Link>
 						</NavItem>
 						<NavItem componentClass="span" eventKey={2} href="#">
+							<Link to="users" className="header-link">Users</Link>
+						</NavItem>
+						<NavItem componentClass="span" eventKey={3} href="#">
 							<Link to="about" className="header-link">About</Link>
 						</NavItem>
 					</Nav>
