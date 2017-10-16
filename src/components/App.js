@@ -7,13 +7,13 @@ import AppRoutes from "../AppRoutes";
 class App extends Component {
 	render() {
 		return (
-
-			<section>
-				<Header/>
-				<AppRoutes/>
-				<Footer something=""/>
+			<section className="site">
+				<div className="site-content">
+					<Header/>
+					<AppRoutes/>
+				</div>
+				<Footer something="Sticky Footer Using Flex"/>
 			</section>
-
 		);
 	}
 }

@@ -38,7 +38,17 @@ class Users extends Component {
 		return (
 			<section className="container mar-t">
 				<div className="bg-lightb jumbotron">
-					<h1>Users</h1>
+					<h1>Add a User</h1>
+					<input
+						type="text"
+						onChange={this.onNameChange}
+						value={this.state.user.name}/>
+					<input
+						type="submit"
+						value="Save"
+						className="btn btn-default mar-l"
+						onClick={this.onClickSave}/>
+					<h3>Users</h3>
 					<Table striped bordered condensed hover>
 						<thead>
 						<tr>
@@ -50,16 +60,6 @@ class Users extends Component {
 						{this.props.users.map(this.userRow)}
 						</tbody>
 					</Table>
-					<h3>Add a User</h3>
-					<input
-						type="text"
-						onChange={this.onNameChange}
-						value={this.state.user.name}/>
-					<input
-						type="submit"
-						value="Save"
-						className="btn btn-default mar-l"
-						onClick={this.onClickSave}/>
 				</div>
 			</section>
 		);
