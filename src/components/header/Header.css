@@ -1,0 +1,59 @@
+.logo {
+    animation: logo-spin infinite 20s linear;
+    height: 50px;
+    position: absolute;
+    top: 2.5px;
+    left: 2%;
+}
+
+.header {
+    background-color: #ffffff;
+    height: 60px;
+    padding: 5px;
+    color: white;
+}
+
+.header-link {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.nav {
+    padding: 5px;
+}
+
+.navbar-toggle:hover, .navbar-toggle, .collapsed {
+    background-color: darkblue !important;
+    border: 1px solid #ccc !important;
+}
+
+.navbar-toggle:hover .icon-bar {
+    background-color: white !important;
+}
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover {
+    color: blue !important;
+}
+
+li {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+li:hover {
+    background-color: #cccccc;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

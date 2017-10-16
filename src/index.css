@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: darkblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.bg-lightb {
+    background-color: #92a7ed;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-black{
+    color: black;
+}
+
+.mar-t {
+    margin-top: 2%;
+}
+
+.mar-r {
+    margin-right: 2%;
+}
+
+.pad-1 {
+    padding: 1%;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
