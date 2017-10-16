@@ -34,6 +34,10 @@ a:hover, a:focus {
     margin-right: 2%;
 }
 
+.mar-l {
+    margin-left: 2%;
+}
+
 .pad-1 {
     padding: 1%;
 }

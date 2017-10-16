@@ -1,6 +1,6 @@
-export default function userReducer(state = [], action) {
+export default function users(state = [], action) {
 	switch (action.type) {
-		case 'CREATE_COURSE':
+		case 'CREATE_USER':
 			return [...state, Object.assign({}, action.user)];
 		default:
 			return state;
