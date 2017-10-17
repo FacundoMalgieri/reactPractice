@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Users from "./components/users/Users";
 import registerServiceWorker from "./registerServiceWorker";
+import AddUsers from './components/users/AddUsers';
 
 const AppRoutes = () => (
 	<Switch>
@@ -11,6 +12,7 @@ const AppRoutes = () => (
 		<Route path="/home" component={Home}/>
 		<Route path="/about" component={About}/>
 		<Route path="/users" component={Users}/>
+		<Route path="/add" component={AddUsers}/>
 	</Switch>
 );
 registerServiceWorker();

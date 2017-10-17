@@ -12,7 +12,6 @@ const UsersList = ({users}) => {
 					<tr>
 						<th>#</th>
 						<th>First Name</th>
-						<th>Last Name</th>
 					</tr>
 					</thead>
 					<tbody>

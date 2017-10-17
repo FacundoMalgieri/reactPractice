@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as userActions from '../../actions/UserActions';
-import {Table} from 'react-bootstrap';
 import {bindActionCreators} from 'redux';
+import * as BrowserRouter from 'react-router-redux';
 
-class Users extends Component {
+class AddUser extends Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
@@ -21,18 +21,8 @@ class Users extends Component {
 	}
 
 	onClickSave() {
-		this.props.actions.createUser(this.state.user);
-	}
-
-	userRow(user, index) {
-		return <tr key={index}>
-			<td>
-				{index}
-			</td>
-			<td>
-				{user.name}
-			</td>
-		</tr>;
+		this.props.actions.saveUser(this.state.user);
+		alert('User Saved - Check it in Users Section (Redirect will be implemented)')
 	}
 
 	render() {
@@ -49,18 +39,6 @@ class Users extends Component {
 						value="Save"
 						className="btn btn-default mar-l"
 						onClick={this.onClickSave}/>
-					<h3>Users</h3>
-					<Table striped bordered condensed hover>
-						<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-						</tr>
-						</thead>
-						<tbody>
-						{this.props.users.map(this.userRow)}
-						</tbody>
-					</Table>
 				</div>
 			</section>
 		);
@@ -69,15 +47,16 @@ class Users extends Component {
 
 function mapStateToProps(state, ownProps) {
 	return {
-		users: state.users
+		user: state.user
 	};
 }
+
 function mapDispatchToProps(dispatch) {
 	return {
 		actions: bindActionCreators(userActions, dispatch)
 	};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Users);
+export default connect(mapStateToProps, mapDispatchToProps)(AddUser);
 
 

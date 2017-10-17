@@ -23,6 +23,9 @@ class Header extends Component {
 							<Link to="users" className="header-link">Users</Link>
 						</NavItem>
 						<NavItem componentClass="span" eventKey={3} href="#">
+							<Link to="add" className="header-link">Add User</Link>
+						</NavItem>
+						<NavItem componentClass="span" eventKey={4} href="#">
 							<Link to="about" className="header-link">About</Link>
 						</NavItem>
 					</Nav>

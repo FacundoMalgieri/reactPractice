@@ -7,10 +7,7 @@ const UserListRow = ({user}) => {
 				{user.id}
 			</td>
 			<td>
-				{user.firstName}
-			</td>
-			<td>
-				{user.lastName}
+				{user.name}
 			</td>
 		</tr>
 	);
